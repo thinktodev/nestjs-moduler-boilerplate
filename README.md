@@ -1,3 +1,33 @@
+# Installation
+```shell
+pnpm install
+```
+# Running the app
+```shell
+# development
+$ pnpm start
+
+# watch mode
+$ pnpm start:dev
+
+# production mode
+$ pnpm start:prod
+```
+
+# Test
+
+```shell
+# unit tests
+$ pnpm test
+
+# e2e tests
+$ pnpm start
+$ pnpm test:e2e
+
+# test coverage
+$ pnpm test:cov
+```
+
 # Todo
 
 - [x] Init Project
