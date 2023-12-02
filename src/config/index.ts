@@ -15,12 +15,12 @@ export const config: Config = {
     host: process.env.DATABASE_HOST || 'localhost',
     port: parseInt(process.env.DATABASE_PORT, 10) || 3306,
     username: process.env.DATABASE_USERNAME || 'root',
-    password: process.env.DATABASE_PASSWORD || '',
-    database: process.env.DATABASE_NAME || 'blog',
+    password: process.env.DATABASE_PASSWORD || 'root',
+    database: process.env.DATABASE_NAME || 'nest-boilerplate',
     entities: [
         __dirname + '/../**/*.entity{.ts,.js}',
     ],
-    synchronize: true,
+    synchronize: process.env.DATABASE_SYNCHRONIZE === 'true' || true,
   },
   timezone: process.env.TZ
 };

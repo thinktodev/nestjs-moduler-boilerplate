@@ -21,6 +21,9 @@
       "@/*": [
         "src/*"
       ],
+      "@core/*": [
+        "src/core/*"
+      ],
       "@entities/*": [
         "src/entities/*"
       ],
